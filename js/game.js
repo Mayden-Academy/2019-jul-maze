@@ -40,7 +40,7 @@ $(function() {
     function firstBrushLoop() {
         $('#first-brush')
             .animate({bottom: 250}, 1000)
-            .animate({bottom: 150}, 1000, firstBrushLoop)
+            .animate({bottom: 150}, 1000, 'linear', firstBrushLoop)
     }
     firstBrushLoop()
 })
@@ -49,7 +49,7 @@ $(function() {
     function secondBrushLoop() {
         $('#second-brush')
             .animate({left: 380}, 1000)
-            .animate({left: 550}, 200, secondBrushLoop)
+            .animate({left: 550}, 200, 'linear', secondBrushLoop)
     }
     secondBrushLoop()
 })
@@ -58,7 +58,7 @@ $(function() {
     function thirdBrushLoop() {
         $('#third-brush')
             .animate({right: 350}, 400)
-            .animate({right: 290}, 400, thirdBrushLoop)
+            .animate({right: 290}, 400, 'linear', thirdBrushLoop)
     }
     thirdBrushLoop()
 })
