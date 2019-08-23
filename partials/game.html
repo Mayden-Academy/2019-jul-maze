@@ -7,16 +7,8 @@
         <img alt="paw" src="images/paw-print.svg" class="paw" id="bottom-right-paw">
         <img alt="paw" src="images/paw-print.svg" class="paw" id="right-paw">
         <img alt="paw" src="images/paw-print.svg" class="paw" id="left-paw">
-        <div id="head-container">
-            <img src="images/dog-head.svg" id="head-img">
-            <div id="start-zone-1" class="start-zone dog"></div>
-            <div id="start-zone-2" class="start-zone dog"></div>
-            <div id="start-zone-3" class="start-zone dog"></div>
-        </div>
-        <div id="hind-container">
-            <img src="images/dog-hind.svg" class="hind-img">
-            <div class="end-zone dog"></div>
-        </div>
+        <div id="head-container"><img src="images/dog-head.svg" id="head-img"></div>
+        <div id="hind-container"><img src="images/dog-hind.svg" id="hind-img"></div>
         <div class="brush" id="first-brush">
             <img src="images/brush-white.svg">
             <div class="lose head-hitbox"></div>
@@ -39,6 +31,12 @@
         </div>
     </div>
     <div class="maze-container">
+        <div id="head-container">
+            <svg draggable="false" src="images/dog-head.svg" id="head-img">
+            <div id="start-zone-1" class="start-zone dog"></div>
+            <div id="start-zone-2" class="start-zone dog"></div>
+            <div id="start-zone-3" class="start-zone dog"></div>
+        </div>
         <div id="first-section" class="path dog"></div>
         <div id="second-section" class="path dog"></div>
         <div id="third-section" class="path dog"></div>
@@ -51,6 +49,10 @@
         <div id="tenth-section" class="path dog"></div>
         <div id="eleventh-section" class="path dog"></div>
         <div id="twelfth-section" class="path dog"></div>
+        <div id="hind-container">
+            <img src="images/dog-hind.svg" id="hind-img">
+            <div class="end-zone dog"></div>
+        </div>
     </div>
 </div>
 <div class="show-popup"></div>
